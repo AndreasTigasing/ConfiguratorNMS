@@ -1,0 +1,20 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My WebApp</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My WebApp</h1>
+    </header>
+    <main>
+        {{ block "content" . }}{{ end }}
+    </main>
+    <footer>
+        <p>Footer content here</p>
+    </footer>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
